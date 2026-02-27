@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SemperSupra — Experimental Agentic Development</title>
+  <style>
+    body { max-width: 900px; margin: 40px auto; padding: 0 16px;
+           font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; }
+    a { color: inherit; }
+    .nav { display: flex; gap: 12px; align-items: baseline; margin-bottom: 18px; }
+    .pill { display: inline-block; padding: 4px 10px; border-radius: 999px; border: 1px solid #ddd; text-decoration: none; }
+    .warn { border: 2px solid #b00020; border-radius: 12px; padding: 18px; }
+    .box { border: 1px solid #ddd; border-radius: 12px; padding: 18px; margin-top: 16px; }
+    h1 { margin: 0 0 10px 0; }
+    h2 { margin-top: 0; }
+    ul { margin-top: 0.5rem; }
+    .graph-wrap { overflow-x: auto; }
+    .graph-note { color: #444; font-size: 0.95rem; margin-top: 10px; }
+    .graph-legend { color: #333; font-size: 0.92rem; }
+    .repo-list { columns: 2; gap: 20px; }
+    .repo-list li { break-inside: avoid; margin-bottom: 6px; }
+    footer { margin-top: 28px; padding-top: 14px; border-top: 1px solid #eee; font-size: 0.95rem; color: #444; }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a class="pill" href="https://github.com/SemperSupra">Back to SemperSupra on GitHub</a>
+    <a class="pill" href="https://sempersupra.github.io/">Home</a>
+  </div>
+
+  <h1>SemperSupra</h1>
+
+  <div class="warn">
+    <h2>Warning: experimental / agent-driven repositories</h2>
+    <p>
+      This GitHub organization is used to experiment with software agents and agentic development workflows.
+      Many artifacts may be created or modified by automated systems.
+    </p>
+    <p>
+      <strong>I am not manually reading, reviewing, or validating the code, documentation, releases, containers,
+      or other artifacts in this organization.</strong>
+    </p>
+    <p>
+      Do <strong>not</strong> trust claims of “production-grade,” “security-hardened,” “verified,” “audited,”
+      or similar language you may see in these repositories. It might be true in some cases, but no effort is
+      being made here to verify it.
+    </p>
+    <p>
+      Use anything from this organization with caution and at your own risk. You are responsible for independent
+      review, testing, and security assessment before use.
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>Contributing / issues / pull requests</h2>
+    <p>
+      The participation policy for this organization follows the same model used by WineBot:
+      participation is <strong>invite-only</strong>. Issues and pull requests from unapproved actors may be
+      automatically labeled and closed.
+    </p>
+    <p>
+      I may occasionally review automatically closed issues and pull requests, but I make no promises about follow-up,
+      acceptance, or resolution.
+    </p>
+    <p>
+      Reference policy: <a href="https://github.com/mark-e-deyoung/WineBot/blob/main/CONTRIBUTING.md">WineBot CONTRIBUTING.md</a>
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>Practical guidance</h2>
+    <ul>
+      <li>Treat all content as untrusted until you verify it yourself.</li>
+      <li>Prefer pinned commits/tags and reproducible builds.</li>
+      <li>Scan dependencies and container images; run in isolated environments.</li>
+    </ul>
+  </div>
+
+  <!-- DEP_GRAPH_START -->
+  <div class="box">
+    <h2>Project dependency graph (SemperSupra internal)</h2>
+    <p>
+      Generated from live org scan on 2026-02-27. Repositories scanned: 9.
+      Direct edges: 5, optional edges: 3, transitive edges: 0.
+    </p>
+    <div class="graph-wrap">
+      <svg width="860" height="500" viewBox="0 0 860 500" role="img" aria-label="Dependency graph for SemperSupra repositories">
+        <rect x="1" y="1" width="858" height="498" rx="12" ry="12" fill="#fafafa" stroke="#d9d9d9" />
+        <defs>
+          <marker id="arrowDirect" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f5fbf" />
+          </marker>
+          <marker id="arrowOptional" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#8a4f00" />
+          </marker>
+          <marker id="arrowTransitive" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#444" />
+          </marker>
+        </defs>
+<line x1="491" y1="419" x2="368" y2="419" stroke="#1f5fbf" stroke-width="2.4" marker-end="url(#arrowDirect)" />
+<line x1="368" y1="419" x2="274" y2="340" stroke="#8a4f00" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowOptional)" />
+<line x1="368" y1="419" x2="252" y2="218" stroke="#8a4f00" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowOptional)" />
+<line x1="274" y1="340" x2="368" y2="419" stroke="#8a4f00" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowOptional)" />
+<line x1="252" y1="218" x2="274" y2="340" stroke="#1f5fbf" stroke-width="2.4" marker-end="url(#arrowDirect)" />
+<line x1="314" y1="112" x2="368" y2="419" stroke="#1f5fbf" stroke-width="2.4" marker-end="url(#arrowDirect)" />
+<line x1="314" y1="112" x2="274" y2="340" stroke="#1f5fbf" stroke-width="2.4" marker-end="url(#arrowDirect)" />
+<line x1="314" y1="112" x2="252" y2="218" stroke="#1f5fbf" stroke-width="2.4" marker-end="url(#arrowDirect)" />
+<a href="https://github.com/SemperSupra/asksage-openai-proxy">
+  <circle cx="430" cy="70" r="26" fill="#fff" stroke="#4b6cb7" stroke-width="2" />
+  <text x="430" y="75" text-anchor="middle" font-size="10" fill="#222">asksage-openai-proxy</text>
+</a>
+<a href="https://github.com/SemperSupra/EvoForge">
+  <circle cx="545" cy="112" r="26" fill="#fff" stroke="#4b6cb7" stroke-width="2" />
+  <text x="545" y="117" text-anchor="middle" font-size="12" fill="#222">EvoForge</text>
+</a>
+<a href="https://github.com/SemperSupra/sempersupra.github.io">
+  <circle cx="607" cy="218" r="26" fill="#fff" stroke="#4b6cb7" stroke-width="2" />
+  <text x="607" y="223" text-anchor="middle" font-size="10" fill="#222">sempersupra.github.io</text>
+</a>
+<a href="https://github.com/SemperSupra/SupraBlueSniffer">
+  <circle cx="585" cy="340" r="26" fill="#fff" stroke="#4b6cb7" stroke-width="2" />
+  <text x="585" y="345" text-anchor="middle" font-size="10" fill="#222">SupraBlueSniffer</text>
+</a>
+<a href="https://github.com/SemperSupra/SupraConduit">
+  <circle cx="491" cy="419" r="26" fill="#fff" stroke="#4b6cb7" stroke-width="2" />
+  <text x="491" y="424" text-anchor="middle" font-size="12" fill="#222">SupraConduit</text>
+</a>
+<a href="https://github.com/SemperSupra/supragoflow">
+  <circle cx="368" cy="419" r="26" fill="#fff" stroke="#4b6cb7" stroke-width="2" />
+  <text x="368" y="424" text-anchor="middle" font-size="12" fill="#222">supragoflow</text>
+</a>
+<a href="https://github.com/SemperSupra/WineBot">
+  <circle cx="274" cy="340" r="26" fill="#fff" stroke="#4b6cb7" stroke-width="2" />
+  <text x="274" y="345" text-anchor="middle" font-size="12" fill="#222">WineBot</text>
+</a>
+<a href="https://github.com/SemperSupra/WineBotAppBuilder">
+  <circle cx="252" cy="218" r="26" fill="#fff" stroke="#4b6cb7" stroke-width="2" />
+  <text x="252" y="223" text-anchor="middle" font-size="10" fill="#222">WineBotAppBuilder</text>
+</a>
+<a href="https://github.com/SemperSupra/WinInspect">
+  <circle cx="314" cy="112" r="26" fill="#fff" stroke="#4b6cb7" stroke-width="2" />
+  <text x="314" y="117" text-anchor="middle" font-size="12" fill="#222">WinInspect</text>
+</a>
+      </svg>
+    </div>
+    <p class="graph-note">
+      Detection method: org-wide scan of repo archives with evidence from `.gitmodules`,
+      scripts/tooling/workflows, and explicit GitHub repository references.
+    </p>
+    <p class="graph-legend">
+      Solid blue arrows: direct dependency. Brown dashed arrows: optional integration.
+      Gray dashed arrows: transitive dependency.
+    </p>
+    <ul class="repo-list">
+      <li><code>SupraConduit -&gt; supragoflow</code> (direct; evidence: <code>build/Dockerfile.toolchain:2</code>)</li>
+      <li><code>supragoflow -&gt; WineBot</code> (optional; evidence: <code>scripts/gg:657</code>)</li>
+      <li><code>supragoflow -&gt; WineBotAppBuilder</code> (optional; evidence: <code>README.md:64</code>)</li>
+      <li><code>WineBot -&gt; supragoflow</code> (optional; evidence: <code>scripts/wb:5</code>)</li>
+      <li><code>WineBotAppBuilder -&gt; WineBot</code> (direct; evidence: <code>.github/workflows/e2e-real.yml:15</code>)</li>
+      <li><code>WinInspect -&gt; supragoflow</code> (direct; evidence: <code>.gitmodules:6</code>)</li>
+      <li><code>WinInspect -&gt; WineBot</code> (direct; evidence: <code>.gitmodules:9</code>)</li>
+      <li><code>WinInspect -&gt; WineBotAppBuilder</code> (direct; evidence: <code>.gitmodules:3</code>)</li>
+    </ul>
+  </div>
+  <!-- DEP_GRAPH_END -->
+
+  <footer>
+    GitHub organization: <a href="https://github.com/SemperSupra">https://github.com/SemperSupra</a>
+  </footer>
+</body>
+</html>
