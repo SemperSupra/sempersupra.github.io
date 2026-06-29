@@ -81,8 +81,8 @@
   <div class="box">
     <h2>Project dependency graph (SemperSupra internal)</h2>
     <p>
-      Generated from live org scan on 2026-06-22. Repositories scanned: 13.
-      Direct edges: 8, optional edges: 3, transitive edges: 2.
+      Generated from live org scan on 2026-06-29. Repositories scanned: 13.
+      Direct edges: 8, optional edges: 4, transitive edges: 2.
     </p>
     <div class="graph-wrap">
       <svg width="860" height="500" viewBox="0 0 860 500" role="img" aria-label="Dependency graph for SemperSupra repositories">
@@ -103,6 +103,7 @@
 <line x1="310" y1="384" x2="261" y2="313" stroke="#1f5fbf" stroke-width="2.4" marker-end="url(#arrowDirect)" />
 <line x1="261" y1="313" x2="251" y2="228" stroke="#8a4f00" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowOptional)" />
 <line x1="261" y1="313" x2="281" y2="147" stroke="#8a4f00" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowOptional)" />
+<line x1="251" y1="228" x2="430" y2="70" stroke="#8a4f00" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowOptional)" />
 <line x1="251" y1="228" x2="261" y2="313" stroke="#8a4f00" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrowOptional)" />
 <line x1="251" y1="228" x2="346" y2="90" stroke="#1f5fbf" stroke-width="2.4" marker-end="url(#arrowDirect)" />
 <line x1="281" y1="147" x2="251" y2="228" stroke="#1f5fbf" stroke-width="2.4" marker-end="url(#arrowDirect)" />
@@ -179,6 +180,7 @@
       <li><code>SupraConduit -&gt; supragoflow</code> (direct; evidence: <code>build/Dockerfile.toolchain:2</code>)</li>
       <li><code>supragoflow -&gt; WineBot</code> (optional; evidence: <code>scripts/gg:663</code>)</li>
       <li><code>supragoflow -&gt; WineBotAppBuilder</code> (optional; evidence: <code>README.md:64</code>)</li>
+      <li><code>WineBot -&gt; .github</code> (optional; evidence: <code>scripts/ci/check-credentials.sh:177</code>)</li>
       <li><code>WineBot -&gt; supragoflow</code> (optional; evidence: <code>scripts/wb:5</code>)</li>
       <li><code>WineBot -&gt; WinInspect</code> (direct; evidence: <code>docker/Dockerfile:36</code>)</li>
       <li><code>WineBotAppBuilder -&gt; WineBot</code> (direct; evidence: <code>.github/workflows/e2e-real.yml:15</code>)</li>
